@@ -24,4 +24,4 @@ class AuthService:
         raise NotImplementedError()
 
 
-auth_service: AuthService()
+auth_service = AuthService()

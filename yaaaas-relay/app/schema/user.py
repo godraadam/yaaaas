@@ -6,11 +6,13 @@ class UserBase(BaseModel):
     address: str
 
 
-class UserCreate:
-    username: str
-    address: str
+class UserCreate(UserBase):
     join_date: int
 
 
 class UserUpdate:
     address: str
+
+
+class UserInDB(UserBase):
+    id: str
