@@ -5,10 +5,12 @@ class UserBase(BaseModel):
     username: str
     address: str
 
-class UserCreate():
+
+class UserCreate:
     username: str
     address: str
     join_date: int
 
-class UserUpdate():
+
+class UserUpdate:
     address: str
