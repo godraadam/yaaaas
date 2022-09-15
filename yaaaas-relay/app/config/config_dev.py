@@ -12,6 +12,9 @@ class DevConfig(BaseSettings):
     # db uri like postgres://user:password@host:port/db-name
     DATABASE_URI: str
 
+    # display name of this service instance
+    SERVICE_NAME: str
+
     class Config:
         case_sensitive = True
         env_file = ".env"
